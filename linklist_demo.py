@@ -25,14 +25,15 @@ class LinkList:
         temp = self.head
         count = 0
         while temp:
-            count += 1
+            if temp.data > 0:
+                count += 1
             temp = temp.next
         return count        
             
 
 list = LinkList()
 n1 = Node(10)
-n2 = Node(20)
+n2 = Node(-20)
 n3 = Node(30)
 list.append(n1)
 list.append(n2)
