@@ -15,5 +15,5 @@ class LinkList:
         last = self.head
         while last.next:
             last = last.next
-        last.next = new_node            
+        last.next = new_node #append new node at the end of the list            
         
