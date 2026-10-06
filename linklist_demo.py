@@ -16,4 +16,8 @@ class LinkList:
         while last.next:
             last = last.next
         last.next = new_node #append new node at the end of the list            
-        
+    def print(self):
+        temp = self.head
+        while temp:
+            print(temp.data)
+            temp=temp.next    
