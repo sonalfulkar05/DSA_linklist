@@ -21,6 +21,13 @@ class LinkList:
         while temp:
             print(temp.data)
             temp=temp.next    
+    def count(self):
+        temp = self.head
+        count = 0
+        while temp:
+            count += 1
+            temp = temp.next
+        return count        
             
 
 list = LinkList()
@@ -31,3 +38,4 @@ list.append(n1)
 list.append(n2)
 list.append(n3)
 list.print()
+print("Number of nodes in the list:", list.count())
