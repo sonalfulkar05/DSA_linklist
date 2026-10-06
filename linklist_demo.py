@@ -29,14 +29,24 @@ class LinkList:
                 count += 1
             temp = temp.next
         return count        
-            
+    def alternate_print(self):
+        temp = self.head
+        while temp:
+            print(temp.data)
+            if temp.next:
+                temp = temp.next.next
+            else:
+                break        
 
 list = LinkList()
 n1 = Node(10)
 n2 = Node(-20)
 n3 = Node(30)
+n4= Node(-40)
 list.append(n1)
 list.append(n2)
 list.append(n3)
+list.append(n4)
 list.print()
 print("Number of nodes in the list:", list.count())
+list.alternate_print()
