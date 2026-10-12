@@ -37,7 +37,13 @@ class LinkList:
                 temp = temp.next.next
             else:
                 break        
-
+    def delete_alternate(self):
+        if self.head is None:
+            return
+        current = self.head
+        while current and current.next:
+            current.next = current.next.next
+            current = current.next
 list = LinkList()
 n1 = Node(10)
 n2 = Node(-20)
@@ -50,3 +56,7 @@ list.append(n4)
 list.print()
 print("Number of nodes in the list:", list.count())
 list.alternate_print()
+list.print()
+list.delete_alternate()
+list.print()
+list.print()
