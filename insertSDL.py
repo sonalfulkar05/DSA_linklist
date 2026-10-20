@@ -29,4 +29,10 @@ class SCL:
             current = current.next
             if current == self.head:
                 break
-        return result        
+        return result       
+
+list1 = SCL()
+list1.insert(1)
+list1.insert(2)
+print(list1.display())
+
