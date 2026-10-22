@@ -32,17 +32,11 @@ class stack:
                 print(temp.data)
                 temp=temp.next
     def reverse(self):
-        if self.isempty():
-            print("Stack is empty")
-            return
-        prev = None
-        current = self.top
-        while current:
-            next_node = current.next
-            current.next = prev
-            prev = current
-            current = next_node
-        self.top = prev        
+        temp=self.top
+        while temp:
+            new_node = Node(temp.data)
+            st1.push(new_node)
+            temp=temp.next    
 st = stack()
 st1 = stack()
 
