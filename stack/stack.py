@@ -18,9 +18,13 @@ class stack:
         if self.isempty():
             print("Stack is empty")
             return    
-        temp self.top
-        while temp:
-            print(temp.data)
-            temp=temp.next
+        else:
+            temp = self.top
+            while temp:
+                print(temp.data)
+                temp=temp.next
             
-        
+st = stack()
+st.push(Node(10))
+st.push(Node(20))
+st.print()
